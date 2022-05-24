@@ -1,6 +1,3 @@
-## Name
-* Pets Choice - Static Template
-
 ## Prerequisites
 * [Install `npm` package manager](https://www.npmjs.com/package/npm-install)
 * [Install `gulp` toolkit](https://www.npmjs.com/package/gulp-install)

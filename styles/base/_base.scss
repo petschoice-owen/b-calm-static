@@ -6,12 +6,16 @@
 
 ::selection {
     color: #fff;
-    background: #96302f;
+    background: $secondary-color;
 }
 
 ::-moz-selection {
     color: #fff;
-    background: #96302f;
+    background: $secondary-color;
+}
+
+body {
+    background-color: #fcfcfc;
 }
 
 

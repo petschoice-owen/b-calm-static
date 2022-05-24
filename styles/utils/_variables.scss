@@ -5,12 +5,11 @@
 // -----------------------------------------------------------------------------
 
 // Fonts
-$font-helveticaneue: 'HelveticaNeue';
-$font-helveticaneue-bold: 'HelveticaNeue-Bold';
-$font-helveticaneue-light: 'HelveticaNeue-Light';
+$font-urbane-light: 'Urbane Light';
+// $font-urbane-medium: 'Urbane Medium';
 
 /// @type List
-$text-font-stack: $font-helveticaneue, 'HelveticaNeue', 'HelveticaNeue Bold', 'HelveticaNeue Light', 'Arial', sans-serif !default;
+$text-font-stack: $font-urbane-light, 'Urbane Light', 'Arial', sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
@@ -22,8 +21,8 @@ $text-color: #39393a !default;
 
 /// Main brand color
 /// @type Color
-$brand-color: #ef4023 !default;
-$secondary-color: #fcaf17 !default;
+$brand-color: #12483b !default;
+$secondary-color: #d5a940 !default;
 
 /// Light grey
 /// @type Color

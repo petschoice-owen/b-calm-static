@@ -61,6 +61,16 @@ var mainAutoPadding = () => {
         }
     }
 }
+
+// footer functions
+var footerFunctions = () => {
+    if ($(".footer-section .phone-number").length) {
+        var phoneNumber = $(".footer-section .phone-number").text();
+        var numberFormatted = phoneNumber.replace(/\s/g, '').replace(/[^a-zA-Z0-9 ]/g, '');
+
+        $(".footer-section .phone-number").attr("href", "tel:+" +numberFormatted);
+    }
+}
   
 // initialize the functions
 windowScrolled();
@@ -68,6 +78,7 @@ windowScrolled();
 $(document).ready(function() {
     // customSlider();
     mainAutoPadding();
+    footerFunctions();
 });
   
 $(window).resize(function() {

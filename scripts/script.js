@@ -84,5 +84,8 @@ $(document).ready(function() {
 $(window).resize(function() {
     mainAutoPadding();
 });
-  
+
+$(window).on("load", function() {
+    new WOW().init(); 
+});
   

@@ -38,8 +38,7 @@ h6 {
     font-size: 20px;
 }
 
-p, ul, ol, label, input, textarea {
-    // font-size: 16px;
+p, ul, ol, li, label, input, textarea {
     font-size: 18px;
     line-height: 1.2;
 }
@@ -79,7 +78,11 @@ a {
 
 .medium-text {
     font-size: 22px;
-    line-height: 1.6;
+    line-height: 1.4;
+
+    &-margin-top {
+        margin-top: 25px;
+    }
 }
 
 
@@ -108,13 +111,17 @@ a {
         font-size: 18px;
     }
 
-    p, ul, ol, label, input, textarea {
+    p, ul, ol, label, li, input, textarea {
         font-size: 16px;
         line-height: 1.4;
     }
 
     .medium-text {
         font-size: 20px;
+
+        &-margin-top {
+            margin-top: 15px;
+        }
     }
 }
 
@@ -147,11 +154,15 @@ a {
         padding-left: 30px;
     }
 
-    p, ul, ol, label, input, textarea {
+    p, ul, ol, li, label, input, textarea {
         font-size: 15px;
     }
 
     .medium-text {
         font-size: 16px;
+
+        &-margin-top {
+            margin-top: 10px;
+        }
     }
 }

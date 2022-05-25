@@ -10,7 +10,8 @@
 @import
     'vendors/slick.min.css',
     'vendors/slick-theme.min.css',
-    'vendors/bootstrap.min.css';
+    'vendors/bootstrap.min.css',
+    'vendors/animate.min.css';
 
 // 3. Base stuff
 @import
@@ -22,13 +23,13 @@
 // 4. Components
 @import
     'components/buttons',
-    'components/checklist';
+    'components/checklist',
+    'components/accordion';
 
 // 5. Layout-related sections
 @import
     'layout/top-navigation',
-    'layout/footer',
-    'layout/hero';
+    'layout/footer';
 
 // 6. Page-specific styles
 @import

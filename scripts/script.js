@@ -44,21 +44,21 @@ var mainAutoPadding = () => {
     
         $(".top-navigation + main").css("padding-top", topNavHeight+"px");
         
-        var footerHeight = $(".footer-section").outerHeight();
-        var heroHeight = topNavHeight + footerHeight;
+        // var footerHeight = $(".footer-section").outerHeight();
+        // var heroHeight = topNavHeight + footerHeight;
         
-        $(".hero").css("height", "calc(100vh - " + heroHeight + "px)");
+        // $(".hero").css("height", "calc(100vh - " + heroHeight + "px)");
     
-        var contentHeight = $(".hero .wrapper").outerHeight();
-        var heroHeight = contentHeight + 200;
-        var heroHeightMobile = contentHeight + 100;
+        // var contentHeight = $(".hero .wrapper").outerHeight();
+        // var heroHeight = contentHeight + 200;
+        // var heroHeightMobile = contentHeight + 100;
     
-        if ($(window).width() <= 767) {
-            $(".hero").css("min-height", heroHeightMobile);
-        }
-        else {
-            $(".hero").css("min-height", heroHeight);
-        }
+        // if ($(window).width() <= 767) {
+        //     $(".hero").css("min-height", heroHeightMobile);
+        // }
+        // else {
+        //     $(".hero").css("min-height", heroHeight);
+        // }
     }
 }
 

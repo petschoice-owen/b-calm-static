@@ -21,7 +21,7 @@
             bottom: 0;
             right: 0;
             opacity: .3;
-            max-height: 250px;
+            max-height: 190px;
         }
 
         .wrapper {
@@ -52,15 +52,17 @@
             z-index: 1;
             margin: auto;
             width: 100%;
-            max-width: 477px;
+            max-width: 320px;
             height: auto;
+            max-height: 320px;
         }
 
         .featured {
             position: relative;
             z-index: 2;
             width: 100%;
-            max-width: 427px;
+            max-width: 310px;
+            max-height: 318px;
         }
 
         .text-wrapper {
@@ -324,20 +326,6 @@
     }
 
     @media (max-width: 1399px) {
-        .calming-spray {
-            .image-overlay {
-                max-height: 210px;
-            }
-
-            .background {
-                max-width: 390px;
-            }
-
-            .featured {
-                max-width: 380px;
-            }
-        }
-
         .section-alternate {
             .text-wrapper {
                 padding-right: 20px;

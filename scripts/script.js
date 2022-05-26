@@ -71,8 +71,64 @@ var footerFunctions = () => {
         $(".footer-section .phone-number").attr("href", "tel:+" +numberFormatted);
     }
 }
+
+// top-navigation - click to scroll to section
+var scrollTarget = () => {
+    $(".top-navigation .navbar-nav a").each(function() {
+        $(this).click(function(e) {
+            e.preventDefault();
+            var navHref = $(this).attr("data-href");
+            var windowSize = $(window).width();
+
+            // if (windowSize < 576) {
+            //     console.log("screen width is less than 576");
+            // }
+            if (windowSize < 768) {
+                $('html, body').animate({
+                    scrollTop: $(navHref).offset().top-70
+                }, 'fast'); 
+            }
+            else if (windowSize < 992) {
+                $('html, body').animate({
+                    scrollTop: $(navHref).offset().top-110
+                }, 'fast'); 
+            }
+            else if (windowSize < 1200) {
+                $('html, body').animate({
+                    scrollTop: $(navHref).offset().top-146
+                }, 'fast'); 
+            }
+            // else if (windowSize < 1400) {
+        
+            // }
+            else {
+                $('html, body').animate({
+                    scrollTop: $(navHref).offset().top-176
+                }, 'fast'); 
+            }
+        });
+    });
+
+    $(".top-navigation .logo-link").click(function(e) {
+        e.preventDefault();
+        var navHref = $(this).attr("data-href");
+
+        $('html, body').animate({
+            scrollTop: $(navHref)
+        }, 'fast'); 
+    });
+
+    if ($(window).width() < 992) {
+        $(".top-navigation .navbar-nav a").each(function() {
+            $(this).click(function() {
+                $(".top-navigation .navbar-toggler").click();
+            });
+        });
+    }
+}
+
   
-// initialize the functions
+/* Initialize the Functions */
 windowScrolled();
   
 $(document).ready(function() {
@@ -83,9 +139,11 @@ $(document).ready(function() {
   
 $(window).resize(function() {
     mainAutoPadding();
+    scrollTarget();
 });
 
 $(window).on("load", function() {
-    new WOW().init(); 
+    scrollTarget();
+    new WOW().init();
 });
   

@@ -105,7 +105,7 @@ var scrollTarget = () => {
             // }
             else {
                 $('html, body').animate({
-                    scrollTop: $(navHref).offset().top-89
+                    scrollTop: $(navHref).offset().top-80
                 }, 'fast'); 
             }
         });

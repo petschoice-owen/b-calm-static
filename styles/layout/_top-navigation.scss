@@ -20,7 +20,6 @@
     .wrapper {
         position: relative;
         z-index: 2;
-        // padding: 46.5px 0;
         padding: 10px 0;
         box-shadow: 0 -5px 20px 0 rgba(0,0,0,.5);
         transition: .35s ease-in-out all;
@@ -33,10 +32,8 @@
   
     .logo-image {
         width: 100%;
-        // max-width: 176px;
         max-width: 100px;
         height: auto;
-        // max-height: 176px;
         max-height: 100px;
         transition: .35s ease-in-out all;
     }
@@ -55,7 +52,7 @@
     
     .menu-item {
         position: relative;
-        padding: 20px 30px;
+        padding: 20px;
     
         &:not(.menu-dropdown) {
             a {
@@ -184,21 +181,6 @@
         }
     }
   
-    @media (max-width: 1399px) {
-        .wrapper {
-            padding: 10px 0;
-        }
-
-        .menu-item {
-            padding: 20px;
-        }
-
-        // .logo-image {
-        //     max-width: 140px;
-        //     max-height: 140px;
-        // }
-    }
-  
     @media (max-width: 1199px) {
         .navbar {
             .container {
@@ -207,7 +189,7 @@
     
             .navbar-nav {
                 align-items: center;
-                padding-top: 10px;
+                // padding-top: 10px;
                 padding-right: 10px;
                 
                 a {
@@ -231,8 +213,12 @@
         }
     
         .logo-image {
-            max-width: 120px;
-            max-height: 120px;
+            max-width: 80px;
+            max-height: 80px;
+        }
+
+        .menu-item {
+            padding: 12px 20px;
         }
     }
   
@@ -242,14 +228,8 @@
         }
 
         .logo-link {
-            // margin: 30px 20px;
             margin: 15px 20px;
             padding: 5px;
-        }
-    
-        .logo-image {
-            max-width: 90px;
-            max-height: 90px;
         }
 
         .container {
@@ -270,7 +250,7 @@
         }
 
         .menu-item {
-            padding: 12px 0;
+            padding: 8px 0;
         }
     }
   
@@ -342,7 +322,7 @@
         }
     
         .menu-item {
-            padding: 7px 0;
+            padding: 5px 0;
     
             &:not(.menu-dropdown) a:after {
                 display: none;
@@ -365,29 +345,26 @@
         padding: 0;
     }
 
-    .logo-image {
-        max-width: 130px;
-        max-height: 130px;
+    .logo-link {
+        padding: 0 10px;
     }
 
-    @media (max-width: 1399px) {
-        .logo-image {
-            max-width: 110px;
-            max-height: 110px;
-        }
+    .logo-image {
+        max-width: 70px;
+        max-height: 70px;
     }
 
     @media (max-width: 1199px) {
         .logo-image {
-            max-width: 90px;
-            max-height: 90px;
+            max-width: 60px;
+            max-height: 60px;
         }
     }
 
     @media (max-width: 991px) {
         .logo-image {
-            max-width: 65px;
-            max-height: 65px;
+            max-width: 55px;
+            max-height: 55px;
         }
 
         .logo-link {

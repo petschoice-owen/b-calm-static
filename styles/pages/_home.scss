@@ -7,7 +7,6 @@
 .page-home {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     background-color: $brand-color;
 
     .calming-spray {
@@ -51,7 +50,7 @@
             left: 0;
             z-index: 1;
             margin: auto;
-            width: 100%;
+            width: auto;
             max-width: 320px;
             height: auto;
             max-height: 320px;
@@ -84,7 +83,7 @@
     .section-alternate {
         position: relative;
         overflow: hidden;
-        padding: 150px 0;
+        padding: 120px 0;
 
         .wrapper {
             position: relative;
@@ -97,7 +96,7 @@
             bottom: 0;
             left: 0;
             opacity: .3;
-            max-width: 565px;
+            max-width: 500px;
         }
 
         .image-wrapper,
@@ -133,7 +132,7 @@
                 right: 0;
                 opacity: .1;
                 max-width: unset;
-                max-height: 540px;
+                max-height: 490px;
             }
 
             .text-wrapper {
@@ -172,7 +171,7 @@
 
     .faqs {
         position: relative;
-        padding: 120px 0;
+        padding: 100px 0;
         color: #fff;
 
         .image-overlay {
@@ -197,7 +196,7 @@
             display: flex;
             flex-direction: column;
             max-width: 1030px;
-            margin: 70px auto auto;
+            margin: 50px auto auto;
         }
     }
 
@@ -241,7 +240,7 @@
             justify-content: center;
             width: 100%;
             max-width: 33.33%;
-            margin-top: 80px;
+            margin-top: 60px;
 
             &-wrapper {
                 display: flex;
@@ -249,12 +248,13 @@
                 flex-direction: column;
                 max-width: 330px;
                 height: 100%;
-                padding: 0 20px;
+                padding: 0 25px;
                 text-align: center;
             }
 
             p {
-                margin-top: 30px;
+                margin-top: 20px;
+                line-height: 1.4;
             }
         }
 
@@ -265,7 +265,7 @@
             img {
                 width: auto;
                 height: auto;
-                max-height: 130px;
+                max-height: 80px;
             }
         }
     }
@@ -434,14 +434,6 @@
                     max-height: 230px;
                 }
             }
-
-            .item {
-                margin-top: 70px;
-            }
-
-            .icon-wrapper img {
-                max-height: 120px;
-            }
         }
     }
   
@@ -454,10 +446,6 @@
                 margin: 50px 0 70px;
             }
 
-            .background {
-                max-width: 440px;
-            }
-
             .text-wrapper {
                 max-width: 460px;
                 padding-left: 0;
@@ -466,8 +454,6 @@
         }
 
         .section-alternate {
-            padding: 110px 0;
-
             .image-overlay {
                 max-width: 400px;
             }
@@ -525,13 +511,17 @@
             }
 
             .accordion {
-                margin-top: 55px;
+                margin-top: 40px;
             }
         }
 
         .instructions {
             .item {
                 max-width: 50%;
+
+                &-wrapper {
+                    max-width: 300px;
+                }
             }
         }
     }
@@ -604,7 +594,7 @@
             }
 
             .accordion {
-                margin-top: 40px;
+                margin-top: 30px;
             }
         }
 
@@ -630,11 +620,7 @@
             }
 
             .item {
-                margin-top: 50px;
-
-                &-wrapper {
-                    max-width: 300px;
-                }
+                margin-top: 40px;
 
                 p {
                     margin-top: 20px;
@@ -642,11 +628,13 @@
             }
 
             .icon-wrapper img {
-                max-height: 90px;
+                max-height: 70px;
             }
         }
 
         .treats {
+            padding: 80px 0;
+            
             .image-checklist-wrapper {
                 flex-direction: column;
                 margin-bottom: 10px;

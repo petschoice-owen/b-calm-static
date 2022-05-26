@@ -90,22 +90,22 @@ var scrollTarget = () => {
             }
             else if (windowSize < 992) {
                 $('html, body').animate({
-                    scrollTop: $(navHref).offset().top-95
+                    scrollTop: $(navHref).offset().top-75
                 }, 'fast'); 
             }
             else if (windowSize < 1200) {
                 $('html, body').animate({
-                    scrollTop: $(navHref).offset().top-126
+                    scrollTop: $(navHref).offset().top-76
                 }, 'fast'); 
             }
-            else if (windowSize < 1400) {
-                $('html, body').animate({
-                    scrollTop: $(navHref).offset().top-146
-                }, 'fast'); 
-            }
+            // else if (windowSize < 1400) {
+            //     $('html, body').animate({
+            //         scrollTop: $(navHref).offset().top-146
+            //     }, 'fast'); 
+            // }
             else {
                 $('html, body').animate({
-                    scrollTop: $(navHref).offset().top-166
+                    scrollTop: $(navHref).offset().top-89
                 }, 'fast'); 
             }
         });

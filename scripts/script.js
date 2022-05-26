@@ -85,25 +85,27 @@ var scrollTarget = () => {
             // }
             if (windowSize < 768) {
                 $('html, body').animate({
-                    scrollTop: $(navHref).offset().top-70
+                    scrollTop: $(navHref).offset().top-68
                 }, 'fast'); 
             }
             else if (windowSize < 992) {
                 $('html, body').animate({
-                    scrollTop: $(navHref).offset().top-110
+                    scrollTop: $(navHref).offset().top-95
                 }, 'fast'); 
             }
             else if (windowSize < 1200) {
                 $('html, body').animate({
+                    scrollTop: $(navHref).offset().top-126
+                }, 'fast'); 
+            }
+            else if (windowSize < 1400) {
+                $('html, body').animate({
                     scrollTop: $(navHref).offset().top-146
                 }, 'fast'); 
             }
-            // else if (windowSize < 1400) {
-        
-            // }
             else {
                 $('html, body').animate({
-                    scrollTop: $(navHref).offset().top-176
+                    scrollTop: $(navHref).offset().top-166
                 }, 'fast'); 
             }
         });

@@ -99,6 +99,14 @@
             display: flex;
             margin-right: 15px;
         }
+
+        a {
+            color: $brand-color;
+
+            &:hover {
+                color: $secondary-color;
+            }
+        }
     }
 
     .social {
